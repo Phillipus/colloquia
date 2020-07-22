@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Colloquia Help File</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF">
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="4"><b>Appendix 7: 
+  Setting up zipped Resources</b></font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">You may wish to 
+  create a Resource that consists of a number of files that need to be placed 
+  together in a Zip file. The recipient of the Resource can then download the 
+  zipped file and access the contents automatically.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">For this to work 
+  the option <b>Automatically unpack downloaded zip files</b> needs to be set 
+  in Preferences (see <b>Browser Settings</b>.)</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">This allows any 
+  zip files that have been downloaded from an FTP URL in a Colloquia Resource 
+  to be automatically unpacked and referenced in the <b>Local File</b> field of 
+  the Resource (see Saving a non-web Resource for further details.) If this option 
+  is set, downloaded zip files are automatically unzipped into a user specified 
+  folder and the first file contained in the zip file is automatically referenced 
+  in the Resource's <i>Local File</i> field.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">If there is a simple 
+  text file called <i>startfile</i> placed in the zip file, the file name that 
+  is in this will be the file that is referenced in the <b>Local File</b> field.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">For example:</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Suppose you have 
+  the following set of files that work together with the file <i>MyPresentation.ppt</i> 
+  being the main file to launch:</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">MyPresentation.ppt<br>
+  supportfile.wav<br>
+  welcome.wav<br>
+  opening.gif</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Using a simple 
+  text editor create a new text file called <i>startfile</i>. Add the name of 
+  the main file as a single line into this text file:</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">MyPresentation.ppt</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Now save this text 
+  file and add it to the zip file together with the other files.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">When the recipient 
+  of the Resource downloads the zip file it will be unpacked, the files extracted, 
+  the referenced file in the <i>startfile</i> will be referenced in the Local 
+  File URL field and the zip file deleted (only the local copy, not the original!)</font></p>
+</body>
+</html>

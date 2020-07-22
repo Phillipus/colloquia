@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>Colloquia Help File</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF">
+<p><font face="Verdana, Arial, Helvetica, sans-serif"><font size="4"><b>Appendix
+  8: Changing the language and wording of Colloquia</b></font></font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Colloquia has multi-language
+  support and you may wish to define your own language set or edit some words
+  or phrases to suit your environment. Here's the background:</font> </p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">The main Java files
+  that Colloquia uses are stored in a file named colloquia.jar found in the Colloquia
+  install folder. This file is essentially an archive file that can be opened
+  as if it were a zip file (PC users can use WinZip to open the file.) Amongst
+  the many files contained in this is a file called strings.properties. If you
+  wish to create new strings (text lines) based on this file, extract a copy of
+  it from the <i>colloquia.jar</i> file (do <b>not</b> remove the file or Colloquia
+  will no longer work) and open it in a text editor.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">The first few lines
+  of this file look something like this:</font></p>
+<blockquote>
+  <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"># English / Default</font></p>
+  <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"># General re-usable
+    Strings<br>
+    # ------------------------------------------------------------------------------<br>
+    CANCEL=Cancel<br>
+    OK=OK<br>
+    ME=Me<br>
+    YES=Yes<br>
+    NO=No</font></p>
+</blockquote>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">The hash sign (#)
+  indicates a comment line and any text to the right of this is ignored.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">The word in capitals
+  to the left of the equals sign (=) is the <i>key</i> and should not be changed.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">The text to the
+  right of the equals sign is the text that is displayed in Colloquia in menus,
+  dialog boxes, information screens and so on.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">You may create
+  an edited version of this <i>strings.properties</i> file renamed to <i>stringsX.properties</i>
+  (where X is a number) in the Colloquia install folder.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">For example:</font></p>
+<blockquote>
+  <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">1. Using a zip
+    utility such as WinZip, extract a copy of the <i>strings.properties</i> file
+    from the <i>colloquia.jar</i> file into the Colloquia install folder (i.e. the
+    same folder as that where <i>colloquia.jar</i> resides). Rename this extracted
+    file to <i>strings1.properties</i>.</font></p>
+  <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">2. Open the <i>strings1.properties</i>
+    file in a text editor and edit the words to the right of the equals sign.</font></p>
+  <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">3. Save the file.</font></p>
+</blockquote>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">When Colloquia
+  next launches and finds this new file it will appear as a language option on
+  the logon screen.</font></p>
+<p> </p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Further language
+  sets may be created in the same way. Ensure that the named numbering sequence
+  is preserved (<i>strings1.properties</i>, <i>strings2.properties</i>, <i>strings3.properties</i>
+  and so on for each set.</font></p>
+<blockquote>&nbsp;</blockquote>
+</body>
+</html>

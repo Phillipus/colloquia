@@ -1,0 +1,102 @@
+<project name="Colloquia Ant Build" default="run" basedir=".">
+
+    <description>
+        Colloquia Ant Build File
+        Note - you need also reload-diva.jar, reload-dweezil.jar and reload-jdom.jar in the lib folder
+        <!-- TODO - This Ant needs updating to link dweezil, diva, and jdom libs  -->
+    </description>
+
+
+    <!-- Default/Start Target -->
+    <target name="run" depends="init, compile, copyfiles, makejar" />
+
+    <!-- Init some stuff -->
+    <target name="init" description="Init some stuff">
+        <property name="target.dir"			location="../../$$colloquia-build$$"/>
+        <property name="build.classes.dir"  location="${target.dir}/$$classes$$"/>
+        <property name="src.dir" 			location="../src" />
+        <property name="lib.dir" 			location="../lib" />
+        <property name="lib.target.dir"		location="${target.dir}/lib"/>
+        <property name="main.jar"       	location="${target.dir}/colloquia.jar"/>
+
+        <!-- Delete old output directory -->
+        <delete dir="${target.dir}"/>
+
+        <!-- Create the target directory -->
+        <mkdir dir="${build.classes.dir}"/>
+    </target>
+
+    <!-- Compile -->
+    <target name="compile" depends="init">
+        <javac srcdir="${src.dir}" destdir="${build.classes.dir}" debug="true" debuglevel="lines,vars,source">
+            <classpath path="${build.classes.dir}"/>
+            <classpath>
+                <fileset dir="${lib.dir}">
+                    <include name="*.jar"/>
+                    <include name="*.zip"/>
+                </fileset>
+            </classpath>
+        </javac>
+
+        <!-- Copy other files -->
+        <copy todir="${build.classes.dir}/net/colloquia/resources">
+            <fileset dir="${src.dir}/net/colloquia/resources"/>
+        </copy>
+
+    </target>
+
+    <!-- Copy necessary files -->
+    <target name="copyfiles" description="Copy all files needed for a distrib">
+
+        <!-- Copy libs -->
+        <copy todir="${lib.target.dir}">
+            <fileset dir="${lib.dir}">
+            </fileset>
+        </copy>
+
+        <!-- Copy Application gif -->
+        <copy file="../src/net/colloquia/resources/images/048.gif" tofile="${target.dir}/app32.gif"/>
+
+        <!-- Copy docs -->
+        <copy todir="${target.dir}/docs">
+            <fileset dir="../docs/release"/>
+        </copy>
+
+        <!-- Copy licences -->
+        <copy todir="${target.dir}/licences">
+            <fileset dir="../docs/licences"/>
+        </copy>
+
+    </target>
+
+    <!-- Put everything into a jar and add the manifest -->
+    <target name="makejar" description="Put everything into a jar and add the manifest">
+
+        <!-- Create a classpath.  This will be created from the contents of the lib folder -->
+        <!-- So make sure the lib jars and the support jar are built and copied first -->
+        <pathconvert dirsep="/" pathsep=" " property="classpath">
+            <map from="${lib.target.dir}" to="lib"/>
+            <path>
+                <fileset dir="${lib.target.dir}">
+                    <include name="**/*.jar" />
+                    <include name="**/*.zip" />
+                </fileset>
+            </path>
+        </pathconvert>
+
+        <!-- Colloquia and Manifest -->
+        <jar jarfile="${main.jar}" update="false">
+            <fileset dir="${build.classes.dir}">
+                <!-- Exclude any built jars -->
+                <exclude name="**/*.jar"/>
+            </fileset>
+            <manifest>
+                <attribute name="Built-By" value="${user.name}"/>
+                <attribute name="Main-Class" value="net.colloquia.LogonWindow"/>
+                <attribute name="Version" value="${version}"/>
+                <attribute name="Class-Path" value="${classpath}"/>
+            </manifest>
+        </jar>
+    </target>
+
+</project>

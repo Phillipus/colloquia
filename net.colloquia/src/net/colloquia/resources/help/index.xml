@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help_index name="Colloquia Help" file="index.html">
+  <item name="Requirements" file="requirements.html" />
+  <item name="Launching Colloquia" file="launching.html" />
+  <item name="The Toolbar" file="toolbar.html" />
+  <item name="The Colloquia Tree" file="tree.html" />
+  <item name="Setting Preferences" file="prefs">
+    <item name="My Details" file="my_details.html" />
+    <item name="Email Setup" file="email_setup.html" />
+    <item name="Other Settings" file="other_settings.html" />
+    <item name="Browser Settings" file="browser_settings.html" />
+  </item>
+  <item name="The People Folder" file="people">
+    <item name="What it is for" file="what.html" />
+    <item name="Adding a person" file="adding_person.html" />
+    <item name="Adding to your People Folder" file="adding_more.html" />
+    <item name="The Notes Tab" file="notes.html" />
+    <item name="The Activities Tab" file="activities.html" />
+    <item name="Deleting a person" file="deleting.html" />
+  </item>
+  <item name="The Resources Folder" file="resources">
+    <item name="What it is for" file="what.html" />
+    <item name="Displaying in an external Browser" file="external.html" />
+    <item name="Saving a Resource" file="saving.html" />
+    <item name="Adding a new Resource" file="adding.html" />
+    <item name="Describing a Resource" file="describing.html" />
+    <item name="Adding Personal Notes" file="notes.html" />
+    <item name="Where the Resource is used" file="where.html" />
+    <item name="Deleting a Resource" file="deleting.html" />
+    <item name="Resource Groups" file="groups.html" />
+    <item name="Adding to your Resources Folder" file="adding_more.html" />
+    <item name="Creating a complete Resource" file="creating.html" />
+    <item name="Contributing a Resource" file="contributing.html" />
+  </item>
+  <item name="Messaging in Colloquia" file="messaging">
+    <item name="Messaging in Colloquia" file="intro.html" />
+    <item name="Receiving Messages in Colloquia" file="receiving.html" />
+  </item>
+  <item name="Activities" file="activities">
+    <item name="Introduction" file="intro.html" />
+    <item name="Receiving Activities in Colloquia" file="receiving.html" />
+    <item name="Accepting or rejecting an invitation" file="accept.html" />
+    <item name="Resources" file="resources.html" />
+    <item name="People" file="people.html" />
+    <item name="Messages" file="messages">
+      <item name="Reading a Message sent to the whole group" file="read_group.html" />
+      <item name="Replying to a Group Conversation Message" file="reply_group.html" />
+      <item name="Sending a New Message to the Group Conversation" file="new_group.html" />
+      <item name="Reading a Message sent just to you by an individual" file="read_ind.html" />
+      <item name="Replying to a Message from an individual" file="reply_ind.html" />
+      <item name="Sending a new personal Message" file="new_ind.html" />
+      <item name="Attachments" file="attach.html" />
+      <item name="Sending all Messages in your Outbox" file="send_all.html" />
+      <item name="Re-Sending Messages" file="resend.html" />
+      <item name="Marking Messages as &quot;not read&quot;" file="not_read.html" />
+      <item name="Reading and submitting an Assignment" file="assign.html" />
+    </item>
+    <item name="Creating your own Activities" file="creating">
+      <item name="Creating your own Activities" file="intro.html" />
+      <item name="The New Activity Wizard" file="new.html" />
+      <item name="Adding Multiple People and Resources to an Activity" file="adding1.html" />
+      <item name="Setting an Assignment" file="assign.html" />
+      <item name="Activity Details, Description and Objectives" file="details.html" />
+      <item name="Adding a Sub-Activity" file="adding2.html" />
+      <item name="Sending Activities to Participants" file="sending.html" />
+      <item name="Updating Activities" file="updating.html" />
+      <item name="Shared Resource Activities" file="shared.html" />
+      <item name="Activity Properties" file="props.html" />
+      <item name="Managing Assignments" file="managing.html" />
+      <item name="Leaving an Activity" file="leaving.html" />
+      <item name="Rejoining an Activity" file="rejoining.html" />
+      <item name="Ending an Activity" file="ending.html" />
+      <item name="Restarting an Activity" file="restart.html" />
+      <item name="What happens to completed Activities" file="completed.html" />
+      <item name="Sending My Details to other people" file="send_my_details.html" />
+      <item name="The Templates Folder" file="templates.html" />
+    </item>
+  </item>
+  <item name="Appendices" file="appendices">
+    <item name="Appendix 1: Colloquia on a dial-up connection to the Internet" file="app1.html" />
+    <item name="Appendix 2: Using Colloquia with your existing POP3 mail account" file="app2.html" />
+    <item name="Appendix 3: E-mail Servers and Settings" file="app3.html" />
+    <item name="Appendix 4: Colloquia data and where it is saved" file="app4.html" />
+    <item name="Appendix 5: The Notes Editor" file="app5.html" />
+    <item name="Appendix 6: Key to Icons and Buttons" file="app6.html" />
+    <item name="Appendix 7: Setting up zipped Resources" file="app7.html" />
+    <item name="Appendix 8: Changing the language and wording of Colloquia" file="app8.html" />
+  </item>
+</help_index>
+
