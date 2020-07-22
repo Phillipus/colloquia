@@ -35,3 +35,6 @@ Since Colloquia is a multi-user system, it has the infrastructure needed to supp
 The Colloquia website used to be at http://www.colloquia.net/ but it's gone now. Here's a snapshot from the web archives:
 
 https://web.archive.org/web/20170323105218/http://www.colloquia.net/
+
+![1people](https://user-images.githubusercontent.com/600504/88205837-40c9d400-cc45-11ea-8e9c-11bcfaf451a7.jpg)
+
