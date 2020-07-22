@@ -1,0 +1,72 @@
+<project name="dweezil" default="run" basedir=".">
+
+	<description>
+		Builds the dweezil jar.
+	
+		$Id: build.xml,v 1.1 2005/03/14 17:08:23 phillipus Exp $
+	</description>
+	
+    <!-- Default/Start Target -->
+    <target name="run" depends="checklib, init, compile, copyfiles, makejar" />
+
+	<!--  Build dependencies first --> 
+	<target name="checklib">
+  		<ant antfile="build.xml" dir="../../uk.ac.reload.diva/ant"  target="run" /> 
+  	</target>
+
+        <!-- Initialise -->
+	<target name="init">
+	    <property name="target.dir"			location="../../../$$ant-build$$"/>
+	    <property name="build.classes.dir"  location="${target.dir}/$$classes$$"/>
+		<property name="lib.target.dir" 	location="${target.dir}/lib" />
+		<property name="dweezil.jar"       	location="${lib.target.dir}/reload-dweezil.jar"/>
+		<property name="src.dir" 			location="../src"/>
+		
+		<!-- Create the time stamp -->
+        <tstamp>
+            <format property="releaseDate" pattern="yyyy/MM/dd HH:mm:ss"/>
+        </tstamp>
+
+        <!-- Create the target directories -->
+        <mkdir dir="${build.classes.dir}"/>
+        <mkdir dir="${lib.target.dir}"/>
+    </target>
+
+    <!-- Compile classes -->
+	<target name="compile">
+        <javac srcdir="${src.dir}" destdir="${build.classes.dir}" debug="true" debuglevel="lines,vars,source">
+            <classpath path="${build.classes.dir}"/>
+            <classpath path="../AppleJavaExtensions.jar"/>
+            <classpath>
+                <fileset dir="../../org.jdom">
+                    <include name="*.jar"/>
+                </fileset>
+            </classpath>
+        </javac>
+	</target>
+	
+	<!-- Copy necessary files -->
+	<target name="copyfiles" description="Copy all files needed for a distrib">
+		<copy todir="${build.classes.dir}">
+			<fileset dir="${src.dir}">
+			    <exclude name="**/*.java"/>
+			</fileset>
+		</copy>
+	</target>
+	    
+	<!-- Make a jar -->
+	<target name="makejar">
+        <jar jarfile="${dweezil.jar}" update="false">
+            <fileset dir="${build.classes.dir}">
+                <include name="**/dweezil/"/>
+                <include name="**/brunchboy/"/>
+            </fileset>
+            <manifest>
+                <attribute name="Built-By" value="${user.name}"/>
+                <attribute name="Version" value="${version}"/>
+            </manifest>
+        </jar>
+    </target>
+
+
+</project>

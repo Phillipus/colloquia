@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: JDOM Plug-in
+Bundle-SymbolicName: org.jdom.plugin
+Bundle-Version: 0.9.0
+Bundle-ClassPath: jdom.jar
+Bundle-Vendor: Reload Project
+Export-Package: org.jdom,
+ org.jdom.adapters,
+ org.jdom.filter,
+ org.jdom.input,
+ org.jdom.output,
+ org.jdom.transform,
+ org.jdom.xpath
+Automatic-Module-Name: org.jdom.plugin

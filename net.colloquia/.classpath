@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="var" path="JRE_LIB" sourcepath="/JRE_SRC"/>
 	<classpathentry kind="lib" path="lib/CWBC-DSKP-411.jar"/>
 	<classpathentry kind="lib" path="lib/mail.jar"/>
 	<classpathentry kind="lib" path="lib/QTJava.zip"/>
 	<classpathentry kind="lib" path="lib/activation.jar"/>
-	<classpathentry kind="lib" path="lib/jdom.jar"/>
-	<classpathentry kind="lib" path="lib/reload-dweezil.jar"/>
-	<classpathentry kind="lib" path="lib/reload-diva.jar"/>
-	<classpathentry kind="lib" path="lib/reload-jdom.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/uk.ac.reload.diva"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/uk.ac.reload.dweezil"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/uk.ac.reload.jdom"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

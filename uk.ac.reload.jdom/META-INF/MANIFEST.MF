@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Reload JDOM Library
+Bundle-SymbolicName: uk.ac.reload.jdom
+Bundle-Version: 1.0.1
+Bundle-ClassPath: .
+Bundle-Vendor: Reload Project
+Export-Package: org.jdom,
+ org.jdom.adapters,
+ org.jdom.filter,
+ org.jdom.input,
+ org.jdom.output,
+ org.jdom.transform,
+ org.jdom.xpath,
+ uk.ac.reload.jdom
+Require-Bundle: org.jdom.plugin;visibility:=reexport
+Automatic-Module-Name: uk.ac.reload.jdom

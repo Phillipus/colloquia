@@ -1,0 +1,56 @@
+<project name="reload-jdom" default="run" basedir=".">
+
+	<description>
+		Builds the reload-jdom jar.
+	
+		$Id: build.xml,v 1.1 2005/03/14 17:32:02 phillipus Exp $
+	</description>
+	
+    <!-- Default/Start Target -->
+    <target name="run" depends="init, compile, makejar" />
+
+    <!-- Initialise -->
+	<target name="init">
+	    <property name="target.dir"			location="../../../$$ant-build$$"/>
+	    <property name="build.classes.dir"  location="${target.dir}/$$classes$$"/>
+		<property name="lib.target.dir" 	location="${target.dir}/lib" />
+		<property name="reload-jdom.jar"    location="${lib.target.dir}/reload-jdom.jar"/>
+		<property name="src.dir" 			location="../src"/>
+		
+		<!-- Create the time stamp -->
+        <tstamp>
+            <format property="releaseDate" pattern="yyyy/MM/dd HH:mm:ss"/>
+        </tstamp>
+
+        <!-- Create the target directories -->
+        <mkdir dir="${build.classes.dir}"/>
+        <mkdir dir="${lib.target.dir}"/>
+    </target>
+
+    <!-- Compile classes -->
+	<target name="compile">
+        <javac srcdir="${src.dir}" destdir="${build.classes.dir}" debug="true" debuglevel="lines,vars,source">
+            <classpath path="${build.classes.dir}"/>
+            <classpath>
+                <fileset dir="../../org.jdom">
+                    <include name="*.jar"/>
+                </fileset>
+            </classpath>
+        </javac>
+    </target>
+	
+	<!-- Make a jar -->
+	<target name="makejar">
+        <jar jarfile="${reload-jdom.jar}" update="false">
+            <fileset dir="${build.classes.dir}">
+                <include name="**/jdom/"/>
+            </fileset>
+            <manifest>
+                <attribute name="Built-By" value="${user.name}"/>
+                <attribute name="Version" value="${version}"/>
+            </manifest>
+        </jar>
+    </target>
+
+
+</project>
