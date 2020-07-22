@@ -4,7 +4,7 @@
 
 **This project is no longer maintained.**
 
-I've uploaded the code here for posterity. The code is...not so brilliant but it still runs on Windows 10 with Java 8 or 11 (probably not on Mac or Linux).
+I've uploaded the code here for posterity. The code is...not so brilliant but it still runs on Windows 10 and MacOS with Java 8 or 11 (not tested on Linux).
 
 Colloquia started life as "TOOMOL" (**Too**lkit for the **M**anagement **o**f **L**earning) and you can read about that here - https://www.sciencedirect.com/science/article/abs/pii/S036013159900055X
 
