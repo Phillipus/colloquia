@@ -14,7 +14,7 @@ The following is what we used to say...
 
 Colloquia
 
-- was a peer-to-peer learning management and groupware system
+- is a peer-to-peer learning management and groupware system
 - supports and encourages self-organising groups
 - provides asynchronous group and personal conversation facilities
 - allows personal information to be shared between participants
