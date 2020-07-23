@@ -10,7 +10,7 @@ Colloquia started life as the "TOOMOL" project (**Too**lkit for the **M**anageme
 
 The instigators of the project were Sandy Britain, Oleg Liber, and Bill Olivier. 
 
-Then, on September 2nd 1998 I came on board as developer, the apps was renamed "Colloquia", and development continued in one form or another until 2005. In 1998 Java was in its infancy and new to me ("Teach Yourself Java in 21 Days" read in 3 days).
+Then, on September 2nd 1998 I came on board as developer, the app was renamed "Colloquia", and development continued in one form or another until 2005. In 1998 Java was in its infancy and new to me ("Teach Yourself Java in 21 Days" read in 3 days).
 
 The following is what we used to say...
 
