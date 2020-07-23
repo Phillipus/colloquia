@@ -4,11 +4,13 @@
 
 **This project is no longer maintained.**
 
-I've uploaded the code here for posterity. The code is...not so brilliant but it still runs on Windows 10 and MacOS with Java 8 or 11 (not tested on Linux).
+I've uploaded the code here for posterity. The code is...not so brilliant but it does still run on Windows 10 and MacOS with Java 8 or 11 (not tested on Linux).
 
-Colloquia started life as "TOOMOL" (**Too**lkit for the **M**anagement **o**f **L**earning) and you can read about that here - https://www.sciencedirect.com/science/article/abs/pii/S036013159900055X
+Colloquia started life as the "TOOMOL" project (**Too**lkit for the **M**anagement **o**f **L**earning) and you can read about that here - https://www.sciencedirect.com/science/article/abs/pii/S036013159900055X
 
-Then, between about 1998-2003 it morphed into "Colloquia". The instigators were Sandy Britain, Oleg Liber, and Bill Olivier. I coded it (OK, it was a long time ago now, Java was in its infancy and I was still learning.)
+The instigators of the project were Sandy Britain, Oleg Liber, and Bill Olivier. 
+
+Then, on September 2nd 1998 I came on board as developer, the apps was renamed "Colloquia", and development continued in one form or another until 2005. In 1998 Java was in its infancy and new to me ("Teach Yourself Java in 21 Days" read in 3 days).
 
 The following is what we used to say...
 
@@ -28,9 +30,7 @@ To support this way of working, users can continually build a library of resourc
  
 Contexts can have sub-contexts, which can be set up by any participating member, containing sub-groups of members, additional resources and new tasks. Contexts and sub-contexts are only seen by their members.
  
-Unlike most other groupware systems, you can do almost all of your work offline, making it ideally suited for those working at a distance and who have difficulty maintaining a permanent internet connection (either because of cost or for technical reasons). No server software is needed - all that is required is an email account for each user, plus our software. Perfect for the laptop user!
- 
-Since Colloquia is a multi-user system, it has the infrastructure needed to support specifications such as EML and IMS Learning Design. RELOAD will augment Colloquia with the capabilities of the package editor and the runtime system as soon as they are realised throughout the project duration. Meanwhile, visit the Colloquia website for further information about (and access to) the current version of the software.
+Unlike most other groupware systems, you can do almost all of your work offline, making it ideally suited for those working at a distance and who have difficulty maintaining a permanent internet connection (either because of cost or for technical reasons). No server software is needed - all that is required is an email account for each user, plus our software. Perfect for the laptop user!*
 
 The Colloquia website used to be at http://www.colloquia.net/ but it's gone now. Here's a snapshot from the web archives:
 
