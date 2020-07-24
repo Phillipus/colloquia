@@ -6,7 +6,7 @@
 
 I've uploaded the code here for posterity. The code is...not so brilliant but it does still run on Windows 10 and MacOS with Java 8 or 11 (not tested on Linux).
 
-Colloquia started life as the "TOOMOL" project (**Too**lkit for the **M**anagement **o**f **L**earning) and you can read about that here - https://www.sciencedirect.com/science/article/abs/pii/S036013159900055X
+Colloquia started life as the "TOOMOL" project (**Too**lkit for the **M**anagement **o**f **L**earning) and you can read about that here - https://www.academia.edu/278667/The_TOOMOL_Project_Supporting_a_Personalised_and_Conversational_Approach_to_Learning
 
 The instigators of the project were Sandy Britain, Oleg Liber, and Bill Olivier. 
 
